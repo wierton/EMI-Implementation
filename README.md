@@ -11,9 +11,9 @@ make
 
 ```
 $ cd output
-$ ./EMI ../tests/b.c -o o.c
-dead blocks: 1 2 3 # this will print dead blocks
-$ ./EMI ../tests/b.c -o o.c --remove=1
+$ ./EMI ../tests/a.c -o o.c # this will print dead blocks
+dead blocks: 1 2 3
+$ ./EMI ../tests/a.c -o o.c --remove=1
 dead blocks: 1 2 3
 try to remove 1
 $ cat o.c
